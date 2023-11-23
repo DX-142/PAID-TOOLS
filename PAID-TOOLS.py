@@ -258,27 +258,28 @@ def alh4aj(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {'authority': 'm.facebook.com',
-            'method': 'GET'
-            'scheme': 'https'‚
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
-            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
-            'cache-control': 'max-age=0',
-            'dpr': '2.75',
-            'referer': 'https://m.facebook.com/?stype=lo&deoia=1&jlou=AfcRNQoO2Sb5LSX4l25-UVf5IFfLQp3jv0us9R8mnZOqW-mOPdTM6epJ6efFpSyHLrpFU6uPmlyrgBiDht9MjEU5y7AuPm_HhxvUF26_MfebjQ&smuh=23529&lh=Ac8NEsl_MMwNK-d9oUs&wtsid=rdr_0sYezuXmyvVAnjOOr&refid=8&hide_dialog=1&refsrc=deprecated&_rdr',
-            'sec-ch-prefers-color-scheme': 'light',
-            'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
-            'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.20"',
-            'sec-ch-ua-mobile': '?1',
-            'sec-ch-ua-model': '"23021RAAEG"',
-            'sec-ch-ua-platform': '"Android"',
-            'sec-ch-ua-platform-version': '"13.0.0"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'sec-fetch-user': '?1',
-            'upgrade-insecure-requests': '1',
+    'method': 'GET'‚
+    'scheme': 'https'‚
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+    'cache-control': 'max-age=0',
+    'dpr': '2.75',
+    'referer': 'https://m.facebook.com/?stype=lo&deoia=1&jlou=AfcRNQoO2Sb5LSX4l25-UVf5IFfLQp3jv0us9R8mnZOqW-mOPdTM6epJ6efFpSyHLrpFU6uPmlyrgBiDht9MjEU5y7AuPm_HhxvUF26_MfebjQ&smuh=23529&lh=Ac8NEsl_MMwNK-d9oUs&wtsid=rdr_0sYezuXmyvVAnjOOr&refid=8&hide_dialog=1&refsrc=deprecated&_rdr',
+    'sec-ch-prefers-color-scheme': 'light',
+    'sec-ch-ua': '"Not_A Brand";v="8", "Chromium";v="120"',
+    'sec-ch-ua-full-version-list': '"Not_A Brand";v="8.0.0.0", "Chromium";v="120.0.6099.20"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-model': '"23021RAAEG"',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-ch-ua-platform-version': '"13.0.0"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'same-origin',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
     # =[ UA = PRO ]= #
-    'user-agent': pro‚}
+    'user-agent': 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+    'viewport-width': '980'‚}
             o = session.post('https://m.facebook.com/login/?next&ref=dbl&fl&login_from_aymh=1&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
